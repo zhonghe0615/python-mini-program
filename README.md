@@ -2,6 +2,7 @@
 
 使用方法：
 1. 安装相关python环境
+   
    $pip install -r requirements.txt2. 
 
 2. 执行爬虫文件
