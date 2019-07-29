@@ -22,12 +22,11 @@ def crawl(visaType, month, city, date):
     print("查询中=============================================================")
     req = urllib2.Request(url, headers = hdr)
     response = urllib2.urlopen(req, context = context)
-    # workFile = "checkee-page-" + str(datetime.datetime.now().time())
     soup = BeautifulSoup(response.read().decode('utf-8', 'ignore'), "html.parser")
-    t = soup.find_all("table")
+    tables = soup.find_all("table")
 
     print("在您之前面谈，且仍然Pending的还有：")
-    for row in t[6].select("tr"):
+    for row in tables[6].select("tr"):
         td = row.select("td")
         if(td[2].text == visaType
         and td[4].text == city
