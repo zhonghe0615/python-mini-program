@@ -32,8 +32,8 @@ def crawl(visaType, month, city, date):
         and td[4].text == city
         and td[6].text == "Pending"
         and td[7].text < date):
-            # print(row)
-            print("User ID: " + td[1].text + " | " + "Visa Type: " + td[2].text + " | " + "Interview Date: " + td[7].text + " | " + "Detail Info: " + td[10].a['href'])
+            detail_info_link = "https://www.checkee.info/" + td[10].a['href'][2:]
+            print("User ID: " + td[1].text + " | " + "Visa Type: " + td[2].text + " | " + "Interview Date: " + td[7].text + " | " + "Detail Info: " + detail_info_link)
 def main():
     visaType = raw_input("请输入签证类型(H1/F1/J1/B1): ")
     month = input("您想搜索哪个月份？(输入数字): ")
