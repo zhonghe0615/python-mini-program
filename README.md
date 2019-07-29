@@ -6,6 +6,7 @@
    $pip install -r requirements.txt2. 
 
 2. 执行爬虫文件
+   
    $python checkee_crawler.py
 
 3. 按照程序提示步骤即可开始品尝
