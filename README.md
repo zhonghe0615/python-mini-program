@@ -3,4 +3,4 @@
 使用方法：
 1. 安装相关python环境（python，pip，urllib2， BeautifulSoup等等）
 2. $python checkee_crawler.py
-3. 按照提示步骤即可开始品尝。
+3. 按照提示步骤即可开始品尝
