@@ -1,4 +1,5 @@
-该脚本是为了方便https://www.checkee.info/main.php用户查询整体审理情况。
+该脚本是为了方便使用 https://www.checkee.info/main.php 的小伙伴们查询签证被check的整体情况。
+
 使用方法：
 1. 安装相关python环境（python，pip，urllib2， BeautifulSoup等等）
 2. $python checkee_crawler.py
