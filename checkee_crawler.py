@@ -31,7 +31,7 @@ def crawl(visaType, month, city, date):
         if(td[2].text == visaType
         and td[4].text == city
         and td[6].text == "Pending"
-        and td[7].text < date):
+        and td[7].text <= date):
             detail_info_link = "https://www.checkee.info/" + td[10].a['href'][2:]
             print("User ID: " + td[1].text + " | " + "Visa Type: " + td[2].text + " | " + "Interview Date: " + td[7].text + " | " + "Detail Info: " + detail_info_link)
 def main():
